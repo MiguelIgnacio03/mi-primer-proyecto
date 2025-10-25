@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Landing Page - Academia de Fútbol</title>
+</head>
+<body>
+  <header>
+    <h1>Academia de Fútbol IVFC</h1>
+    <nav>
+      <ul>
+        <li><a href="#inicio">Inicio</a></li>
+        <li><a href="#nosotros">Nosotros</a></li>
+        <li><a href="#galeria">Galería</a></li>
+        <li><a href="#contacto">Contacto</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section id="inicio">
+      <h2>Bienvenidos</h2>
+      <p>Entrena, mejora y alcanza tu máximo potencial con nosotros.</p>
+    </section>
+
+    <section id="nosotros">
+      <h2>Sobre Nosotros</h2>
+      <p>Somos una academia dedicada a la formación deportiva y personal de jóvenes futbolistas.</p>
+    </section>
+
+    <section id="galeria">
+      <h2>Galería</h2>
+      <figure>
+        <img src="img1.jpg" alt="Entrenamiento">
+        <img src="img2.jpg" alt="Partido">
+        <img src="img3.jpg" alt="Trofeos">
+      </figure>
+    </section>
+
+    <section id="video">
+      <h2>Video Promocional</h2>
+      <video controls width="400">
+        <source src="promo.mp4" type="video/mp4">
+      </video>
+    </section>
+
+    <aside>
+      <h3>Noticias</h3>
+      <ul>
+        <li>Nueva categoría Sub-15</li>
+        <li>Inscripciones abiertas</li>
+      </ul>
+    </aside>
+
+    <section id="formulario">
+      <h2>Regístrate</h2>
+      <form action="registro.php" method="POST">
+        <label>Nombre:</label>
+        <input type="text" name="nombre" required>
+
+        <label>Correo:</label>
+        <input type="email" name="correo" required>
+
+        <label>Categoría:</label>
+        <select name="categoria">
+          <option>Sub-10</option>
+          <option>Sub-15</option>
+          <option>Sub-20</option>
+        </select>
+
+        <button type="submit">Registrar</button>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2025 Academia IVFC. Todos los derechos reservados.</p>
+  </footer>
+</body>
+</html>
